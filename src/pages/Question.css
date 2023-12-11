@@ -26,10 +26,18 @@
   }
   .score-section {
     display: flex;
-    font-size: 24px;
+    flex-direction: column;
+    font-size: 35px;
     align-items: center;
+    font-family: Impact, fantasy;
   }
   
+  .game-over{
+    font-size: 50px;
+    align-items: center;
+    font-family: Impact, fantasy;
+    margin-bottom: 10px;
+  }
   /* QUESTION/TIMER/LEFT SECTION */
   .question-section {
     width: 100%;
@@ -81,13 +89,6 @@
     margin-bottom: 10px;
   }
   
-  .correct {
-    background-color: #2f922f;
-  }
-  
-  .incorrect {
-    background-color: #ff3333;
-  }
   
   button:hover {
     background-color: #555e7d;
@@ -100,3 +101,12 @@
   button svg {
     margin-right: 5px;
   }
+
+  .next-level{
+   text-align: center;
+  }
+
+  
+  #play-again{
+    text-align: center;
+   }
