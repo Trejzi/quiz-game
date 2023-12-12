@@ -154,11 +154,62 @@ function Question() {
 			  { answerText: 'Mimas', isCorrect: false },
 			],
 		  },
+		  {
+			difficulty: 'very hard',
+			questionText: 'Who was the ancient Greek mathematician known for his work in geometry, including the famous "Elements"?',
+			answerOptions: [
+			  { answerText: 'Euclid', isCorrect: true },
+			  { answerText: 'Pythagoras', isCorrect: false },
+			  { answerText: 'Archimedes', isCorrect: false },
+			  { answerText: 'Thales', isCorrect: false },
+			],
+		  },
+		  {
+			difficulty: 'very hard',
+			questionText: 'Which physicist formulated the uncertainty principle?',
+			answerOptions: [
+			  { answerText: 'Niels Bohr', isCorrect: false },
+			  { answerText: 'Werner Heisenberg', isCorrect: true },
+			  { answerText: 'Max Planck', isCorrect: false },
+			  { answerText: 'Erwin Schrödinger', isCorrect: false },
+			],
+		  },
+		  {
+			difficulty: 'very hard',
+			questionText: 'In what year did the first human land on the Moon?',
+			answerOptions: [
+			  { answerText: '1969', isCorrect: true },
+			  { answerText: '1971', isCorrect: false },
+			  { answerText: '1958', isCorrect: false },
+			  { answerText: '1985', isCorrect: false },
+			],
+		  },
+		  {
+			difficulty: 'very hard',
+			questionText: 'Who is considered the father of modern computer science?',
+			answerOptions: [
+			  { answerText: 'Alan Turing', isCorrect: true },
+			  { answerText: 'Charles Babbage', isCorrect: false },
+			  { answerText: 'Ada Lovelace', isCorrect: false },
+			  { answerText: 'John von Neumann', isCorrect: false },
+			],
+		  },
+		  {
+			difficulty: 'very hard',
+			questionText: 'Which composer is known for the composition of "The Rite of Spring"?',
+			answerOptions: [
+			  { answerText: 'Ludwig van Beethoven', isCorrect: false },
+			  { answerText: 'Igor Stravinsky', isCorrect: true },
+			  { answerText: 'Wolfgang Amadeus Mozart', isCorrect: false },
+			  { answerText: 'Pyotr Ilyich Tchaikovsky', isCorrect: false },
+			],
+		  },
 	  ];
 
 	const [currentQuestion, setCurrentQuestion] = useState(0);
 	const [showScore, setShowScore] = useState(false);
 	const [score, setScore] = useState(0);
+	const [hint, setHint] = useState(false);
 	const [difficultyLevel, setDifficultyLevel] = useState('easy');
 	const [selectedAnswerIndex, setSelectedAnswerIndex] = useState(null);
 	let filteredQuestions = questions.filter(
@@ -166,6 +217,25 @@ function Question() {
 	  );
 	const answerOptions = filteredQuestions[currentQuestion].answerOptions;
 	const currentQuestionData = filteredQuestions[currentQuestion];
+
+	const handleHintClick = () => {
+		setHint(true);
+
+		const currentAnswerOptions = filteredQuestions[currentQuestion].answerOptions;
+		const correctAnswerIndex = currentAnswerOptions.findIndex(
+		  (option) => option.isCorrect
+		);
+	  
+		let randomIncorrectIndex;
+		do {
+		  randomIncorrectIndex = Math.floor(Math.random() * currentAnswerOptions.length);
+		} while (randomIncorrectIndex === correctAnswerIndex);
+	  
+		const hintAnswerOptions = [
+		  currentAnswerOptions[correctAnswerIndex],
+		  currentAnswerOptions[randomIncorrectIndex],
+		];
+	  };
 
 	const handleAnswerOptionClick = (index,isCorrect) => {
 		setSelectedAnswerIndex(index);
@@ -192,6 +262,9 @@ function Question() {
 		  else if (score >3 && difficultyLevel === 'medium') {
 			setDifficultyLevel('hard');
 		  }
+		  else if (score >3 && difficultyLevel === 'hard') {
+			setDifficultyLevel('very hard');
+		  }
 			filteredQuestions = questions.filter(
 			(question) => question.difficulty === difficultyLevel
 		  );
@@ -212,6 +285,7 @@ function Question() {
 
 	  };
 
+
   return (
 	<>
 <div className='header'>
@@ -231,9 +305,10 @@ function Question() {
 				<>
 				<div className='score-section'>
 				{score <= 3 && <span className='game-over'>GAME OVER</span>}
+				{score > 3 && difficultyLevel === 'very hard' && <span className='game-over'>CONGRATULATIONS! YOU WON!</span>}
 					You scored {score} out of {filteredQuestions.length}
 				</div>
-				{score > 3 ? (
+				{score > 3 && difficultyLevel !== 'very hard' ? (
 					<div className="button-container">
 					<button className='menu-btn' id='next-level' onClick={() => handleNextLevelClick()}>Next Level</button>
 					</div>
@@ -245,6 +320,13 @@ function Question() {
 			   </>
 			) : (
 				<>
+				<div className='hint'>
+				{!hint && (
+                <button id='hint' onClick={handleHintClick}>
+                  <i class="fa-solid fa-lightbulb"></i>
+                </button>
+              )}
+				</div>
 					<div className='question-section'>
 						<div className='question-count'>
 							<span>Question {currentQuestion + 1}</span>

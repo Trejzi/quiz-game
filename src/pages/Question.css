@@ -65,8 +65,7 @@
     border-radius: 15px;
     text-align: center;
   }
-  
-  /* ANSWERS/RIGHT SECTION */
+
   .answer-section {
     width: 100%;
     display: flex;
@@ -74,6 +73,10 @@
     justify-content: space-between;
   }
   
+  .answer-section button{
+    text-align: left;
+  }
+
   button {
     width: 100%;
     font-size: 16px;
@@ -81,12 +84,11 @@
     padding: 10px;
     background-color: #252d4a;
     border-radius: 15px;
-    display: flex;
-    justify-content: flex-start;
-    align-items: center;
     border: 5px solid #234668;
     cursor: pointer;
     margin-bottom: 10px;
+    text-align: center;
+    text-decoration: none;
   }
   
   
@@ -109,4 +111,14 @@
   
   #play-again{
     text-align: center;
+   }
+
+   .hint img{
+    height: 25px;
+    width: auto;
+    margin-right: 5px;
+   }
+
+   
+   .hint button{
    }
