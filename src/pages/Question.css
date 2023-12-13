@@ -13,8 +13,8 @@
   }
   .header {
     display: flex;
-    justify-content: space-between; /* Align children to the start and end of the container */
-    align-items: center; /* Center items vertically */
+    justify-content: space-between;
+    align-items: center; 
     height: 100px;
     width: 100%;
     margin-top: 0;
@@ -38,7 +38,6 @@
     font-family: Impact, fantasy;
     margin-bottom: 10px;
   }
-  /* QUESTION/TIMER/LEFT SECTION */
   .question-section {
     width: 100%;
     position: relative;
@@ -54,16 +53,6 @@
   
   .question-text {
     margin-bottom: 12px;
-  }
-  
-  .timer-text {
-    background: rgb(230, 153, 12);
-    padding: 15px;
-    margin-top: 20px;
-    margin-right: 20px;
-    border: 5px solid rgb(255, 189, 67);
-    border-radius: 15px;
-    text-align: center;
   }
 
   .answer-section {
@@ -114,11 +103,11 @@
    }
 
    .hint img{
-    height: 25px;
+    height: 20px;
     width: auto;
     margin-right: 5px;
    }
 
-   
-   .hint button{
+   #hint{
+    background-color:  #7cc6fe;
    }

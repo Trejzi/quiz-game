@@ -15,12 +15,12 @@ function Question() {
 		},
 		{
 		  difficulty: 'easy',
-		  questionText: 'What is 15 x 15?',
+		  questionText: ' Which country has the largest population in the world?',
 		  answerOptions: [
-			{ answerText: '144', isCorrect: false },
-			{ answerText: '196', isCorrect: false },
-			{ answerText: '225', isCorrect: true },
-			{ answerText: '250', isCorrect: false },
+			{ answerText: 'China', isCorrect: true },
+			{ answerText: 'India', isCorrect: false },
+			{ answerText: 'Nigeria', isCorrect: false},
+			{ answerText: 'USA', isCorrect: false },
 		  ],
 		},
 		{
@@ -35,12 +35,12 @@ function Question() {
 		},
 		{
 		  difficulty: 'easy',
-		  questionText: 'How many legs does a cat have?',
+		  questionText: ' What country are the Great Pyramids of Giza located in?',
 		  answerOptions: [
-			{ answerText: '2', isCorrect: false },
-			{ answerText: '4', isCorrect: true },
-			{ answerText: '6', isCorrect: false },
-			{ answerText: '8', isCorrect: false },
+			{ answerText: 'Morocco', isCorrect: false },
+			{ answerText: 'Egypt', isCorrect: true },
+			{ answerText: 'Saudi Arabia', isCorrect: false },
+			{ answerText: 'Turkey', isCorrect: false },
 		  ],
 		},
 		{
@@ -55,22 +55,22 @@ function Question() {
 		},
 		{
 			difficulty: 'medium',
-			questionText: 'Who wrote the play "Romeo and Juliet"?',
+			questionText: 'How many countries are there in the United Kingdom?',
 			answerOptions: [
-			  { answerText: 'William Shakespeare', isCorrect: true },
-			  { answerText: 'Jane Austen', isCorrect: false },
-			  { answerText: 'Charles Dickens', isCorrect: false },
-			  { answerText: 'Mark Twain', isCorrect: false },
+			  { answerText: '2', isCorrect: false },
+			  { answerText: '3', isCorrect: false },
+			  { answerText: '4', isCorrect: true },
+			  { answerText: '5', isCorrect: false },
 			],
 		  },
 		  {
 			difficulty: 'medium',
-			questionText: 'In what year did World War II end?',
+			questionText: 'Which ocean does the Amazon River run into?',
 			answerOptions: [
-			  { answerText: '1945', isCorrect: true },
-			  { answerText: '1918', isCorrect: false },
-			  { answerText: '1939', isCorrect: false },
-			  { answerText: '1950', isCorrect: false },
+				{ answerText: 'Atlantic Ocean', isCorrect: true },
+				{ answerText: 'Indian Ocean', isCorrect: false },
+				{ answerText: 'Arctic Ocean', isCorrect: false },
+				{ answerText: 'Pacific Ocean', isCorrect:false },
 			],
 		  },
 		  {
@@ -95,113 +95,113 @@ function Question() {
 		  },
 		  {
 			difficulty: 'medium',
-			questionText: 'Who painted the Mona Lisa?',
+			questionText: ' What season does Australia experience in December?',
 			answerOptions: [
-			  { answerText: 'Leonardo da Vinci', isCorrect: true },
-			  { answerText: 'Vincent van Gogh', isCorrect: false },
-			  { answerText: 'Pablo Picasso', isCorrect: false },
-			  { answerText: 'Claude Monet', isCorrect: false },
+			  { answerText: 'Spring', isCorrect: false},
+			  { answerText: 'Summer', isCorrect: true },
+			  { answerText: 'Autumn', isCorrect: false },
+			  { answerText: 'Winter', isCorrect: false},
 			],
 		  },
 		
 		  {
 			difficulty: 'hard',
-			questionText: 'Who was the first President of the United States?',
+			questionText: 'In what ocean is the Bermuda Triangle located?',
 			answerOptions: [
-			  { answerText: 'Thomas Jefferson', isCorrect: false },
-			  { answerText: 'John Adams', isCorrect: false },
-			  { answerText: 'George Washington', isCorrect: true },
-			  { answerText: 'James Madison', isCorrect: false },
+				{ answerText: 'Atlantic Ocean', isCorrect:  true },
+				{ answerText: 'Indian Ocean', isCorrect: false },
+				{ answerText: 'Arctic Ocean', isCorrect: false },
+				{ answerText: 'Pacific Ocean', isCorrect:false },
 			],
 		  },
 		  {
 			difficulty: 'hard',
-			questionText: 'In what year did the French Revolution begin?',
+			questionText: 'Which of these is the capital of Costa Rica?',
 			answerOptions: [
-			  { answerText: '1789', isCorrect: true },
-			  { answerText: '1799', isCorrect: false },
-			  { answerText: '1809', isCorrect: false },
-			  { answerText: '1776', isCorrect: false },
+			  { answerText: 'San Jose', isCorrect: true },
+			  { answerText: 'San Cristobel', isCorrect: false },
+			  { answerText: 'San Sebastien', isCorrect: false },
+			  { answerText: 'Santa Cruz', isCorrect: false },
 			],
 		  },
 		  {
 			difficulty: 'hard',
-			questionText: 'Which chemical element has the symbol "Au"?',
+			questionText: 'What is the only continent with land in all four hemispheres?',
 			answerOptions: [
-			  { answerText: 'Silver', isCorrect: false },
-			  { answerText: 'Gold', isCorrect: true },
-			  { answerText: 'Platinum', isCorrect: false },
-			  { answerText: 'Copper', isCorrect: false },
+			  { answerText: 'Asia', isCorrect: false },
+			  { answerText: 'Australia', isCorrect: false},
+			  { answerText: 'Europe', isCorrect: false },
+			  { answerText: 'Africa', isCorrect:true },
 			],
 		  },
 		  {
 			difficulty: 'hard',
-			questionText: 'Who developed the theory of relativity?',
+			questionText: 'What is the flattest state in the United States?',
 			answerOptions: [
-			  { answerText: 'Isaac Newton', isCorrect: false },
-			  { answerText: 'Albert Einstein', isCorrect: true },
-			  { answerText: 'Niels Bohr', isCorrect: false },
-			  { answerText: 'Galileo Galilei', isCorrect: false },
+			  { answerText: 'Kansas', isCorrect: false },
+			  { answerText: 'Oklahoma', isCorrect: false },
+			  { answerText: 'Florida', isCorrect: true },
+			  { answerText: 'Illinois', isCorrect: false },
 			],
 		  },
 		  {
 			difficulty: 'hard',
-			questionText: 'What is the largest moon of Saturn?',
+			questionText: 'Which island is the largest?',
 			answerOptions: [
-			  { answerText: 'Titan', isCorrect: true },
-			  { answerText: 'Enceladus', isCorrect: false },
-			  { answerText: 'Iapetus', isCorrect: false },
-			  { answerText: 'Mimas', isCorrect: false },
+			  { answerText: 'Sumatra', isCorrect: false},
+			  { answerText: 'Great Britain', isCorrect: false },
+			  { answerText: 'Honshu', isCorrect: false },
+			  { answerText: 'Greenland', isCorrect: true },
 			],
 		  },
 		  {
 			difficulty: 'very hard',
-			questionText: 'Who was the ancient Greek mathematician known for his work in geometry, including the famous "Elements"?',
+			questionText: 'Which country is home to the most volcanos?',
 			answerOptions: [
-			  { answerText: 'Euclid', isCorrect: true },
-			  { answerText: 'Pythagoras', isCorrect: false },
-			  { answerText: 'Archimedes', isCorrect: false },
-			  { answerText: 'Thales', isCorrect: false },
+			  { answerText: 'Guatemala', isCorrect: false },
+			  { answerText: 'Indonesia', isCorrect: true },
+			  { answerText: 'Iceland', isCorrect: false },
+			  { answerText: 'Hawaii', isCorrect: false },
 			],
 		  },
 		  {
 			difficulty: 'very hard',
-			questionText: 'Which physicist formulated the uncertainty principle?',
+			questionText: 'Identify the location of the Tropic of Capricorn on the world map and name three countries through which it passes.',
 			answerOptions: [
-			  { answerText: 'Niels Bohr', isCorrect: false },
-			  { answerText: 'Werner Heisenberg', isCorrect: true },
-			  { answerText: 'Max Planck', isCorrect: false },
-			  { answerText: 'Erwin Schrödinger', isCorrect: false },
+			  { answerText: 'Brazil, Madagascar, Australia', isCorrect: true },
+			  { answerText: 'Argentina, South Africa, India', isCorrect: false },
+			  { answerText: 'Chile, Mozambique, Indonesia', isCorrect: false },
+			  { answerText: 'New Zealand, Namibia, Mexico', isCorrect: false },
 			],
 		  },
 		  {
 			difficulty: 'very hard',
-			questionText: 'In what year did the first human land on the Moon?',
+			questionText: 'Identify the world\'s largest and second-largest lakes by surface area.',
 			answerOptions: [
-			  { answerText: '1969', isCorrect: true },
-			  { answerText: '1971', isCorrect: false },
-			  { answerText: '1958', isCorrect: false },
-			  { answerText: '1985', isCorrect: false },
+			  { answerText: 'Caspian Sea, Lake Superior', isCorrect: true },
+			  { answerText: 'Lake Baikal, Lake Tanganyika', isCorrect: false },
+			  { answerText: 'Great Bear Lake, Great Slave Lake', isCorrect: false },
+			  { answerText: 'Lake Victoria, Lake Huron', isCorrect: false },
 			],
 		  },
 		  {
 			difficulty: 'very hard',
-			questionText: 'Who is considered the father of modern computer science?',
+			questionText: 'Which city is the world’s most densely populated?',
 			answerOptions: [
-			  { answerText: 'Alan Turing', isCorrect: true },
-			  { answerText: 'Charles Babbage', isCorrect: false },
-			  { answerText: 'Ada Lovelace', isCorrect: false },
-			  { answerText: 'John von Neumann', isCorrect: false },
+			  { answerText: 'Bogotá, Colombia', isCorrect: false },
+			  { answerText: 'Dhaka, Bangladesh', isCorrect: false },
+			  { answerText: 'Kathmandu, Nepal', isCorrect: false },
+			  { answerText: 'Manila, Philippines', isCorrect: true },
 			],
 		  },
 		  {
 			difficulty: 'very hard',
-			questionText: 'Which composer is known for the composition of "The Rite of Spring"?',
+			questionText: 'Which country has the most natural lakes?',
 			answerOptions: [
-			  { answerText: 'Ludwig van Beethoven', isCorrect: false },
-			  { answerText: 'Igor Stravinsky', isCorrect: true },
-			  { answerText: 'Wolfgang Amadeus Mozart', isCorrect: false },
-			  { answerText: 'Pyotr Ilyich Tchaikovsky', isCorrect: false },
+			  { answerText: 'USA', isCorrect: false },
+			  { answerText: 'Canada', isCorrect: true },
+			  { answerText: 'Australia', isCorrect: false },
+			  { answerText: 'Brazil', isCorrect: false },
 			],
 		  },
 	  ];
@@ -210,6 +210,7 @@ function Question() {
 	const [showScore, setShowScore] = useState(false);
 	const [score, setScore] = useState(0);
 	const [hint, setHint] = useState(false);
+	const [showHint, setShowHint] = useState(false);
 	const [difficultyLevel, setDifficultyLevel] = useState('easy');
 	const [selectedAnswerIndex, setSelectedAnswerIndex] = useState(null);
 	let filteredQuestions = questions.filter(
@@ -217,10 +218,11 @@ function Question() {
 	  );
 	const answerOptions = filteredQuestions[currentQuestion].answerOptions;
 	const currentQuestionData = filteredQuestions[currentQuestion];
+	const [hintAnswerOptions, setHintAnswerOptions] = useState([]);
 
 	const handleHintClick = () => {
 		setHint(true);
-
+		setShowHint(true);
 		const currentAnswerOptions = filteredQuestions[currentQuestion].answerOptions;
 		const correctAnswerIndex = currentAnswerOptions.findIndex(
 		  (option) => option.isCorrect
@@ -235,6 +237,7 @@ function Question() {
 		  currentAnswerOptions[correctAnswerIndex],
 		  currentAnswerOptions[randomIncorrectIndex],
 		];
+		setHintAnswerOptions(hintAnswerOptions);
 	  };
 
 	const handleAnswerOptionClick = (index,isCorrect) => {
@@ -248,12 +251,13 @@ function Question() {
 			setTimeout(() => {
 				setCurrentQuestion(nextQuestion);
 				setSelectedAnswerIndex(null);
+				setShowHint(false);
 			  }, 1500);
 
 		} else {
-			setShowScore(true);
-			
-		}
+			setShowScore(true);	
+			setShowHint(false);	
+		} 
 	};
 	const handleNextLevelClick = () => {
 		if (score > 3 && difficultyLevel === 'easy') {
@@ -282,7 +286,7 @@ function Question() {
 		setScore(0);
 		setSelectedAnswerIndex(null);
 		setDifficultyLevel('easy');
-
+		setHint(false);
 	  };
 
 
@@ -295,10 +299,7 @@ function Question() {
 					  <div className='score'>
 								<h3>Score : {score}</h3>
                       </div>
-
-				
-		</div>
-
+				</div>
 
     <div className='app'>
 			{showScore ? (
@@ -320,20 +321,38 @@ function Question() {
 			   </>
 			) : (
 				<>
-				<div className='hint'>
-				{!hint && (
-                <button id='hint' onClick={handleHintClick}>
-                  <i class="fa-solid fa-lightbulb"></i>
-                </button>
-              )}
-				</div>
+				<div className='header'>
 					<div className='question-section'>
 						<div className='question-count'>
 							<span>Question {currentQuestion + 1}</span>
 						</div>
 						<div className='question-text'>{filteredQuestions[currentQuestion].questionText}</div>
 					</div>
+					<div className='hint'>
+                <button id='hint' onClick={handleHintClick} disabled={hint}>
+                  <img src='/images/games-hint-icon-1702x2048-6izvcc1v.png' />
+                </button>
+				</div>
+					</div>
 					<div className='answer-section'>
+				{showHint ? (
+					// Render the hint answer options
+					<>
+					{hintAnswerOptions.map((hintOption, index) => (
+						<button
+						key={index}
+						onClick={() => handleAnswerOptionClick(index, hintOption.isCorrect)}
+						style={{
+							backgroundColor: selectedAnswerIndex === index ? (hintOption.isCorrect ? 'green' : 'red') : 'inherit',
+						}}
+						>
+						{hintOption.answerText}
+						</button>
+					))}
+					</>
+				) : (
+					// Render the regular answer options
+					<>
 					{answerOptions.map((answerOption, index) => (
 						<button
 						key={index}
@@ -345,7 +364,9 @@ function Question() {
 						{answerOption.answerText}
 						</button>
 					))}
-					</div>
+					</>
+				)}
+				</div>
 				</>
 			)}
 		</div>
