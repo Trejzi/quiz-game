@@ -88,10 +88,6 @@
   button:focus {
     outline: none;
   }
-  
-  button svg {
-    margin-right: 5px;
-  }
 
   .next-level{
    text-align: center;
